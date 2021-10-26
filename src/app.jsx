@@ -1,10 +1,9 @@
+import React, { Component } from 'react';
 import './app.css';
 import Habits from './components/habits';
-
-import React, { Component } from 'react';
 import Navbar from './components/navbar';
 
-class app extends Component {
+class App extends Component {
   state = {
     habits: [
       { id: 1, name: 'Reading', count: 0 },
@@ -39,7 +38,6 @@ class app extends Component {
       }
       return item;
     });
-
     this.setState({ habits });
     // const habits = [...this.state.habits];
     // const index = habits.indexOf(habit);
@@ -88,4 +86,4 @@ class app extends Component {
   }
 }
 
-export default app;
+export default App;
